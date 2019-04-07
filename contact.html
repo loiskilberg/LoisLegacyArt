@@ -83,19 +83,10 @@
                             <h5><i class="fa fa-envelope" style="margin-right:5px;"></i>Email</h5>
                             <p>Email me at&nbsp;<a href="mailto:info@loislegacyart.com">info@loislegacyart.com</a>&nbsp;or fill out the form below:</p>
                             <div>
-                                <form id="contact-form" method="post" action="contact.php">
-                                    <label class="mb-0" for="Name">Name:</label>
-                                    <input class="mb-3" type="text" id="field_name" name="sender_name" required/>
-                                    <br>
-                                    <label class="mb-0" for="Phone">Phone:</label>
-                                    <input class="mb-3" type="text" id="field_phone" name="sender_phone"/>
-                                    <br>
-                                    <label class="mb-0" for="Email">Email:</label>
-                                    <input class="mb-3" type="text" id="field_email" name="sender_email" required/>
-                                    <br>
-                                    <textarea class="mb-3" placeholder="Message" rows="5" cols="20" id="field_message" name="sender_message"></textarea>
-                                    <br>
-                                    <input type="submit" name="send_message" value="Submit" class="submit-button btn btn-primary"/>
+                                <form id="contact-form" method="post" action="https://formspree.io/info@loislegacyart.com">
+                                    <input type="email" name="email" placeholder="Your email">
+                                    <textarea name="message" placeholder="Your Message"></textarea>
+                                    <button type="submit">Submit</button>
                                 </form>
                             </div>
                         </div>
